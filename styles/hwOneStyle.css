@@ -1,0 +1,80 @@
+
+body{
+    background-image: url("/assets/bckg-image.jpg");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.nav-style {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+header{
+    margin-top: 20px ;
+    text-align: center;
+    color: white;
+}
+
+.hw-list{
+    list-style: none;
+}
+.hw-list-style{
+    text-align: center;
+    border-radius: 20px;
+    border: white;
+    border-style: solid;
+    border-width: thin;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-decoration: none;
+    color: rgb(247, 255, 217);
+}
+.hw-list-style:hover{
+    background-color: #E32526;
+    color: white;
+}
+.center-list{
+    text-align: center;
+    margin-top: 40px;
+    
+}
+
+
+.menu-order {
+  float: left;
+}
+
+.menu-order a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.menu-order a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+    background-color: #E32526;
+}
+
+.footer-style{
+    text-align: center;
+    /* padding: 3px; */
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    bottom: 0;
+}
