@@ -1,5 +1,6 @@
-
-
+/*
+This script open and close the collapsible section
+*/
 let coll = document.getElementsByClassName("collapsible");
 
 for (let i = 0; i < coll.length; i++) {
@@ -13,3 +14,8 @@ for (let i = 0; i < coll.length; i++) {
         }
     });
 }
+/*
+End of the script
+
+*/
+
