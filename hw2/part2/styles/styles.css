@@ -15,6 +15,7 @@ body{
     text-align: center;
 }
 
+
 /* Alert error style */
 .alert-error{
   padding: 20px;
@@ -24,6 +25,10 @@ body{
   font-weight: bold;
 }
 /* End alert error style */
+
+/* #error{
+  display: none;
+} */
 
 
 /* Link style */

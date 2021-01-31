@@ -31,11 +31,14 @@
 
             <input type="text" id="num3" name="num3" placeholder="Enter a number"><br><br>
 
-            <di id="result"></di>
-            <input type="button" onclick="sum()" value="Submit">
+            <div id="fadein-wrapper" style="display: none;">
+                <div id="result"></div>
+            </div>
+            <input type="button" id="fadein-result" onclick="sum()" value="Submit">
             <input type="reset" onclick="resetResult()" value="Reset">
         </form>
         <div id="error"></div>
+
 
     </div>
     <footer class="footer-style">
@@ -45,11 +48,13 @@
     <script src='/hw2/part2/js/script.js'></script>
     <script>
         $(document).ready(function () {
-            $("#t").click(function () {
-                $("#error").fadeIn(300000);
+            $("#fadein-result").click(function () {
+                $("#fadein-wrapper").fadeIn("slow");
                 console.log("the document is ready");
             });
+
         });
+
     </script>
 </body>
 
