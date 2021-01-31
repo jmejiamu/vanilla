@@ -5,6 +5,12 @@ body{
 
 .title{
     text-align: center;
+    font-size: 35px;
+}
+
+.container {
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
 /* Nav Bar style */
