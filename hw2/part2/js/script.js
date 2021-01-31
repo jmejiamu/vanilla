@@ -20,11 +20,13 @@ const sum = () => {
 
         document.getElementById("result").innerHTML = `
         <p>
-            Sum: ${total}<br>
-            Product: ${product}<br>
-            Average: ${total / 3}<br>
-            Max value: ${Math.max(n1, n2, n3)}<br>
-            Min value: ${Math.min(n1, n2, n3)}<br>
+        <strong>
+        Sum: ${total}<br>
+        Product: ${product}<br>
+        Average: ${total / 3}<br>
+        Max value: ${Math.max(n1, n2, n3)}<br>
+        Min value: ${Math.min(n1, n2, n3)}<br>
+        </strong>
         </p>`;
         document.getElementById("error").innerHTML = ""
     }

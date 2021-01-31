@@ -21,24 +21,24 @@
     </header>
     <div class="container">
 
-        <a href="/hw2/hw2.html">Homework 2</a>
+        <a class="btn-link" href="/hw2/hw2.html">Homework 2</a>
 
-        <form name="my-form">
+        <form class="form-style" name="my-form">
+            <p><strong>Enter three numbers to get the Sum, Product, Average, Min and Max value</strong></p>
+            <!-- <label>Number 1:</label><br> -->
+            <input type="text" id="num1" name="num1" autofocus placeholder="Enter a number"><br>
 
-            <label>Number 1:</label><br>
-            <input type="text" id="num1" name="num1" autofocus><br>
+            <!-- <label>Number 2:</label><br> -->
+            <input type="text" id="num2" name="num2" placeholder="Enter a number"><br>
 
-            <label>Number 2:</label><br>
-            <input type="text" id="num2" name="num2"><br>
-
-            <label>Number 3:</label><br>
-            <input type="text" id="num3" name="num3"><br><br>
+            <!-- <label>Number 3:</label><br> -->
+            <input type="text" id="num3" name="num3" placeholder="Enter a number"><br><br>
 
             <di id="result"></di>
             <input type="button" onclick="sum()" value="Submit">
-            <input type="reset" onclick="resetResult()" value="reset">
-            <div id="error"></div>
+            <input type="reset" onclick="resetResult()" value="Reset">
         </form>
+        <div id="error"></div>
         <!-- <div id="t">test</div> -->
         <!-- <button id="test" onclick="sum()"> whos</button> -->
 
@@ -51,10 +51,7 @@
     <script>
         $(document).ready(function () {
             $("#t").click(function () {
-                // $("#t").hide();
-                // $("#div2").fadeIn("slow");
-                // $("#result").hide();
-                $("#error").first().fadeTo(3000);
+                $("#error").fadeIn(300000);
                 console.log("the document is ready");
             });
         });

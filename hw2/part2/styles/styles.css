@@ -25,6 +25,94 @@ body{
 }
 /* End alert error style */
 
+
+/* Link style */
+.btn-link{
+    text-align: center;
+    border-radius: 15px;
+    border: rgb(233, 48, 48);
+    border-style: solid;
+    border-width: thin;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-decoration: none;
+    color: rgb(211, 21, 21);
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.btn-link:hover{
+    background-color: #eb8484;
+    color: white;
+}
+/* End link style */
+
+/* Form style */
+.form-style{
+  text-align: center;
+  border: 1px ;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin-top: 15px;
+}
+/* End form style */
+
+/* input number */
+input[type= text]{
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  margin-bottom: 15px;
+  padding: 8px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: medium;
+  font-weight: bold;
+}
+/* End input number */
+
+input[type=button]{
+  border-radius: 15px;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-family: 'Barlow Condensed', sans-serif;
+  background-color: white;
+  font-weight: bold;
+  font-size: medium;
+  margin-right: 5px;
+  border: 1px solid rgb(233, 48, 48);
+  color: rgb(211, 21, 21);
+}
+input[type=reset]{
+  border-radius: 15px;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-family: 'Barlow Condensed', sans-serif;
+  background-color: white;
+  font-weight: bold;
+  font-size: medium;
+  margin-left: 5px;
+  color: rgb(211, 21, 21);
+  border: 1px solid rgb(233, 48, 48);
+}
+
+input[type=button]:hover{
+  background-color: #eb8484;
+    color: white
+}
+input[type=reset]:hover{
+  background-color: #eb8484;
+    color: white
+}
+
 /* Nav Bar style */
 .menu-order {
   float: left;
