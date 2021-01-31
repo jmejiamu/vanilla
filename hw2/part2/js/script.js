@@ -14,7 +14,7 @@ const sum = () => {
 
     if (isNaN(total)) {
         document.getElementById("error").innerHTML = `
-        <p class="alert-error">Error you must enter valid values</p>`
+        <p class="alert-error">Enter valid values, make sure all fields are filled with any number</p>`
         document.getElementById("result").innerHTML = ""
     } else {
 
