@@ -25,6 +25,26 @@
     <div class="container">
         <a class="hw2-btn-style" href="/hw2/hw2.html">Homework 2</a>
 
+        <form class="form-style" name="my-form">
+            <p><strong>Enter three numbers to get the Sum, Product, Average, Min and Max value</strong></p>
+            <input type="text" id="num1" name="num1" autofocus placeholder="Enter a number"><br>
+
+            <input type="text" id="num2" name="num2" placeholder="Enter a number"><br>
+
+            <input type="text" id="num3" name="num3" placeholder="Enter a number"><br>
+
+            <input type="text" id="num4" name="num4" placeholder="Enter a number"><br>
+
+            <input type="text" id="num5" name="num5" placeholder="Enter a number"><br><br>
+
+            <!-- <div id="fadein-wrapper" style="display: none;"> -->
+            <div id="result"></div>
+            <!-- </div> -->
+            <input type="button" id="fadein-result" onclick="zero()" value="Submit">
+            <input type="reset" onclick="resetResult()" value="Reset">
+        </form>
+        <div id="error"></div>
+
         <script src='/hw2/part3/js/script.js'></script>
     </div>
 
