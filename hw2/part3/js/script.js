@@ -1,4 +1,4 @@
-const zero = () => {
+const countValues = () => {
 
     // Getting user inputs
     let num1 = document.getElementById("num1").value;
