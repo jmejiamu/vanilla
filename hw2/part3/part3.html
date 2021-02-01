@@ -8,6 +8,8 @@
     <meta name='Homework 2' content='Coming Soon'>
     <link rel='stylesheet' type='text/css' media='screen' href='/hw2/part3/styles/styles.css'>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap" rel="stylesheet">
 </head>
 
@@ -38,15 +40,25 @@
 
             <input type="text" id="num5" name="num5" placeholder="Enter a number"><br><br>
 
-            <!-- <div id="fadein-wrapper" style="display: none;"> -->
-            <div id="result"></div>
-            <!-- </div> -->
+            <div id="fadein-wrapper" style="display: none;">
+                <div id="result"></div>
+            </div>
             <input type="button" id="fadein-result" onclick="countValues()" value="Submit">
             <input type="reset" onclick="resetResult()" value="Reset">
         </form>
         <div id="error"></div>
 
         <script src='/hw2/part3/js/script.js'></script>
+        <script>
+            $(document).ready(function () {
+                $("#fadein-result").click(function () {
+                    $("#fadein-wrapper").fadeIn("slow");
+                    console.log("the document is ready");
+                });
+
+            });
+
+        </script>
     </div>
 
     <footer class="footer-style">
