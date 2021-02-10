@@ -150,7 +150,13 @@ input[type=reset]:hover{
     color: white;
     position: fixed;
     width: 100%;
-    height: 60px;
+    height: 95px;
     bottom: 0;
 }
 /* End Footer  */
+
+i{
+  color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+}
