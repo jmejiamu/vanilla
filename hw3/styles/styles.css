@@ -1,6 +1,11 @@
 body{
     margin: 0px;
+    font-family: 'Barlow Condensed', sans-serif;
 }
+.title{
+    text-align: center;
+}
+
 /* Nav bar */
 .menu-order {
   float: left;
