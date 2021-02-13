@@ -9,7 +9,7 @@
     <link rel='stylesheet' type='text/css' media='screen' href='./styles/styles.css'>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src='main.js'></script>
+    <script src='/hw3/js/script.js' async></script>
 </head>
 
 <body>
@@ -21,26 +21,47 @@
     </header>
     <div class="container">
 
-        <a class="btn-link" href="/index.html">Main Page</a>
 
-        <form class="form-style" name="my-form">
-            <p><strong>Students Grades</strong></p>
-            <input type="text" id="num1" name="num1" autofocus placeholder="Homework score"><br>
+        <div class="margin-btn-hw1">
+            <a class="hw1-btn-style" href="/index.html">Homework 1</a>
 
-            <input type="text" id="num2" name="num2" placeholder="Mid-term score"><br>
+        </div>
 
-            <input type="text" id="num3" name="num3" placeholder="Final Exam score"><br>
-
-            <input type="text" id="num3" name="num3" placeholder="Participation score"><br>
-
-            <div id="fadein-wrapper" style="display: none;">
-                <div id="result"></div>
+        <button class="collapsible active btn-style">Part 1</button>
+        <div class="content">
+            <p>Create a webpage that contains a script that displays in pairs and strong (bold), the letters xy and the
+                numbers 12 and 89 on the same line, with each pair of characters separated by one space.</p>
+            <div class="margin-btn">
+                <a class="btn-link" href="/hw3/part1/part1.html">Go to part 1</a>
             </div>
-            <input type="button" id="fadein-result" onclick="operation()" value="Submit">
+        </div>
 
-            <input type="reset" onclick="resetResult()" value="Reset">
-        </form>
-        <div id="error"></div>
+        <br />
+        <button class="collapsible active btn-style">Part 2</button>
+        <div class="content">
+            <p>Create a webpage that contains a script that inputs three integers via form text boxes and displays the
+                sum, average, and product of the three integers, and the smallest and largest of the three integers.
+                Your results should be displayed using a form textarea or a div element -<strong> DO NOT USE
+                    ALERT!!!.</strong></p>
+            <div class="margin-btn">
+
+                <a class="btn-link margin-btn" href="/hw2/part2/part2.html">Go to part 2</a>
+            </div>
+
+        </div>
+
+        <br />
+        <button class="collapsible active btn-style">Part 3</button>
+        <div class="content">
+            <p>Create a webpage that contains a script that inputs 5 numbers and determines and displays the count of
+                the negative numbers, the number of positive numbers, and the number of zeros. Use input boxes in a form
+                for the input numbers. Your results should be displayed using a form textarea or a div element -
+                <strong>NO ALERT WILL BE ACCEPTED!!!.</strong>
+            </p>
+            <div class="margin-btn">
+                <a class="btn-link" href="/hw2/part3/part3.html">Go to part 3</a>
+            </div>
+        </div>
 
     </div>
 
