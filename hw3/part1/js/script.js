@@ -70,7 +70,7 @@ const handleGrades = (total, letter) => {
 
 const handleGradesDandF = (total, letter) => {
     document.getElementById("result").innerHTML = `
-    <p>
+    <p class="grades-d-f">
     <strong>
     Average Grade: ${total} ${letter} <br>
     Student must retake the course

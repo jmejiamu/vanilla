@@ -129,6 +129,14 @@ body{
 }
 /* Error style End */
 
+/* Styling message for D and F */
+.grades-d-f{
+  color: rgb(102, 102, 235);
+  font-weight: bolder;
+  font-size: large;
+}
+/* End styling message for D and F */
+
 /* Footer */
 .footer-style{
     text-align: center;
