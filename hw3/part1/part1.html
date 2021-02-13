@@ -21,21 +21,21 @@
     </header>
     <div class="container">
 
-        <a class="btn-link" href="/index.html">Main Page</a>
+        <a class="btn-link" href="/hw3/hw3.html">Homework 3</a>
 
         <form class="form-style" name="my-form">
             <p><strong>Students Grades</strong></p>
-            <input type="text" id="hw-score" name="num1" autofocus placeholder="Homework score"><br>
+            <input type="number" id="hw-score" name="num1" min="0" autofocus placeholder="Homework score"><br>
 
-            <input type="text" id="mt-score" name="num2" placeholder="Mid-term score"><br>
+            <input type="number" id="mt-score" name="num2" placeholder="Mid-term score"><br>
 
-            <input type="text" id="fn-score" name="num3" placeholder="Final Exam score"><br>
+            <input type="number" id="fn-score" name="num3" placeholder="Final Exam score"><br>
 
-            <input type="text" id="p-score" name="num3" placeholder="Participation score"><br>
+            <input type="number" id="p-score" name="num3" placeholder="Participation score"><br>
 
-            <div id="fadein-wrapper" style="display: none;">
-                <div id="result"></div>
-            </div>
+            <!-- <div id="fadein-wrapper" style="display: none;"> -->
+            <div id="result"></div>
+            <!-- </div> -->
             <input type="button" id="fadein-result" onclick="studentGrades()" value="Submit">
 
             <input type="reset" onclick="resetResult()" value="Reset">
