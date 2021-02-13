@@ -23,24 +23,26 @@
 
         <a class="btn-link" href="/hw3/hw3.html">Homework 3</a>
 
-        <form class="form-style" name="my-form">
-            <p><strong>Students Grades</strong></p>
-            <input type="number" id="hw-score" name="num1" min="0" autofocus placeholder="Homework score"><br>
+        <div class="form-style">
+            <h1><strong>Students Grades</strong></h1>
+            <form name="my-form">
+                <input type="number" id="hw-score" name="num1" min="0" autofocus placeholder="Homework score"><br>
 
-            <input type="number" id="mt-score" name="num2" placeholder="Mid-term score"><br>
+                <input type="number" id="mt-score" name="num2" placeholder="Mid-term score"><br>
 
-            <input type="number" id="fn-score" name="num3" placeholder="Final Exam score"><br>
+                <input type="number" id="fn-score" name="num3" placeholder="Final Exam score"><br>
 
-            <input type="number" id="p-score" name="num3" placeholder="Participation score"><br>
+                <input type="number" id="p-score" name="num3" placeholder="Participation score"><br>
 
-            <!-- <div id="fadein-wrapper" style="display: none;"> -->
-            <div id="result"></div>
-            <!-- </div> -->
-            <input type="button" id="fadein-result" onclick="studentGrades()" value="Submit">
+                <!-- <div id="fadein-wrapper" style="display: none;"> -->
+                <div id="result"></div>
+                <!-- </div> -->
+                <input type="button" id="fadein-result" onclick="studentGrades()" value="Submit">
 
-            <input type="reset" onclick="resetResult()" value="Reset">
-        </form>
-        <div id="error"></div>
+                <input type="reset" onclick="resetResult()" value="Reset">
+            </form>
+            <div id="error"></div>
+        </div>
 
     </div>
 
