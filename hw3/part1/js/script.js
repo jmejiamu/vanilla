@@ -61,7 +61,7 @@ const handleGrades = (total, letter) => {
     document.getElementById("result").innerHTML = `
     <p>
     <strong>
-    Average Grade: ${total} ${letter} <br>
+    Student Final Average: ${total} ${letter} <br>
     </strong>
     </p>`;
     document.getElementById("error").innerHTML = ""
@@ -72,7 +72,7 @@ const handleGradesDandF = (total, letter) => {
     document.getElementById("result").innerHTML = `
     <p class="grades-d-f">
     <strong>
-    Average Grade: ${total} ${letter} <br>
+    Student Final Average: ${total} ${letter} <br>
     Student must retake the course
     </strong>
     </p>`;
@@ -82,7 +82,7 @@ const handleGradesDandF = (total, letter) => {
 
 const handleError = () => {
     document.getElementById("error").innerHTML = `
-        <p class="alert-error" >Enter valid values 0 -100 and make sure all fields are filled with any number.</p>`
+        <p class="alert-error" >Enter valid values 0 - 100 and make sure all fields are filled with any number.</p>`
     document.getElementById("result").innerHTML = ""
 
 }

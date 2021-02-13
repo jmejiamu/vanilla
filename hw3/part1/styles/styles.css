@@ -137,6 +137,12 @@ body{
 }
 /* End styling message for D and F */
 
+#result{
+  font-weight: bolder;
+  font-size: large;
+  
+}
+
 /* Footer */
 .footer-style{
     text-align: center;
