@@ -32,51 +32,39 @@ const averageTotal = (total) => {
         handleError();
     } else {
         let rountTotal = Math.round(total);
-        console.log("TOTAl", rountTotal);
+
         if (rountTotal >= 90) {
 
-            document.getElementById("result").innerHTML = `
-            <p>
-            <strong>
-            Average Grade: ${rountTotal} A <br>
-            </p>`;
-            document.getElementById("error").innerHTML = ""
+            handleGrades(rountTotal, "A");
+
         } else if (rountTotal >= 80 && rountTotal <= 89) {
-            console.log("B");
-            document.getElementById("result").innerHTML = `
-            <p>
-            <strong>
-            Average Grade: ${rountTotal} B <br>
-            </p>`;
-            document.getElementById("error").innerHTML = ""
+
+            handleGrades(rountTotal, "B")
+
         } else if (rountTotal >= 70 && rountTotal <= 79) {
-            console.log("C");
-            document.getElementById("result").innerHTML = `
-            <p>
-            <strong>
-            Average Grade: ${rountTotal} C <br>
-            </p>`;
-            document.getElementById("error").innerHTML = ""
+
+            handleGrades(rountTotal, "C")
         } else if (rountTotal >= 60 && rountTotal <= 69) {
-            console.log("D");
-            document.getElementById("result").innerHTML = `
-            <p>
-            <strong>
-            Average Grade: ${rountTotal} D <br>
-            </p>`;
-            document.getElementById("error").innerHTML = ""
+
+            handleGrades(rountTotal, "D")
+
         } else if (rountTotal <= 59) {
-            console.log("F");
-            document.getElementById("result").innerHTML = `
-            <p>
-            <strong>
-            Average Grade: ${rountTotal} F <br>
-            </p>`;
-            document.getElementById("error").innerHTML = ""
+            handleGrades(rountTotal, "F")
+
         } else {
             console.log("error");
         }
     }
+}
+
+const handleGrades = (total, letter) => {
+    document.getElementById("result").innerHTML = `
+    <p>
+    <strong>
+    Average Grade: ${total} ${letter} <br>
+    </p>`;
+    document.getElementById("error").innerHTML = ""
+
 }
 
 const handleError = () => {
