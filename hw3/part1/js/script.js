@@ -18,7 +18,7 @@ const studentGrades = () => {
         // getting total average score
         let finalAverage = (.5 * hwAvg) + (.2 * midExam) + (.2 * finalExam) + (.1 * p);
 
-        average(finalAverage)
+        averageTotal(finalAverage)
 
     } else {
         handleError();
@@ -27,17 +27,55 @@ const studentGrades = () => {
 }
 
 // This function handle the total average grades ex. 90 - 100 A   
-const average = (total) => {
+const averageTotal = (total) => {
     if (Number.isNaN(total)) {
         handleError();
     } else {
+        let rountTotal = Math.round(total);
+        console.log("TOTAl", rountTotal);
+        if (rountTotal >= 90) {
 
-        document.getElementById("result").innerHTML = `
-        <p>
-        <strong>
-        Average Grade: ${parseInt(total)}<br>
-        </p>`;
-        document.getElementById("error").innerHTML = ""
+            document.getElementById("result").innerHTML = `
+            <p>
+            <strong>
+            Average Grade: ${rountTotal} A <br>
+            </p>`;
+            document.getElementById("error").innerHTML = ""
+        } else if (rountTotal >= 80 && rountTotal <= 89) {
+            console.log("B");
+            document.getElementById("result").innerHTML = `
+            <p>
+            <strong>
+            Average Grade: ${rountTotal} B <br>
+            </p>`;
+            document.getElementById("error").innerHTML = ""
+        } else if (rountTotal >= 70 && rountTotal <= 79) {
+            console.log("C");
+            document.getElementById("result").innerHTML = `
+            <p>
+            <strong>
+            Average Grade: ${rountTotal} C <br>
+            </p>`;
+            document.getElementById("error").innerHTML = ""
+        } else if (rountTotal >= 60 && rountTotal <= 69) {
+            console.log("D");
+            document.getElementById("result").innerHTML = `
+            <p>
+            <strong>
+            Average Grade: ${rountTotal} D <br>
+            </p>`;
+            document.getElementById("error").innerHTML = ""
+        } else if (rountTotal <= 59) {
+            console.log("F");
+            document.getElementById("result").innerHTML = `
+            <p>
+            <strong>
+            Average Grade: ${rountTotal} F <br>
+            </p>`;
+            document.getElementById("error").innerHTML = ""
+        } else {
+            console.log("error");
+        }
     }
 }
 
