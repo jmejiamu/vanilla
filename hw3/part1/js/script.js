@@ -46,10 +46,10 @@ const averageTotal = (total) => {
             handleGrades(rountTotal, "C")
         } else if (rountTotal >= 60 && rountTotal <= 69) {
 
-            handleGrades(rountTotal, "D")
+            handleGradesDandF(rountTotal, "D")
 
         } else if (rountTotal <= 59) {
-            handleGrades(rountTotal, "F")
+            handleGradesDandF(rountTotal, "F")
 
         } else {
             console.log("error");
@@ -62,6 +62,19 @@ const handleGrades = (total, letter) => {
     <p>
     <strong>
     Average Grade: ${total} ${letter} <br>
+    </strong>
+    </p>`;
+    document.getElementById("error").innerHTML = ""
+
+}
+
+const handleGradesDandF = (total, letter) => {
+    document.getElementById("result").innerHTML = `
+    <p>
+    <strong>
+    Average Grade: ${total} ${letter} <br>
+    Student must retake the course
+    </strong>
     </p>`;
     document.getElementById("error").innerHTML = ""
 
