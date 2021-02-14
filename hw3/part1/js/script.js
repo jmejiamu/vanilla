@@ -76,7 +76,6 @@ const handleGradesDandF = (total, letter) => {
     document.getElementById("error").innerHTML = ""
 }
 
-
 const handleError = () => {
     document.getElementById("error").innerHTML = `
     <p class="alert-error" >Enter valid values 0 - 100 and make sure all fields are filled with any number.</p>`;
