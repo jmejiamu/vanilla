@@ -24,6 +24,38 @@
 
         <a class="btn-link" href="/hw3/hw3.html">Homework 3</a>
 
+        <div class="form-style">
+            <h1><strong>Sales</strong></h1>
+            <form name="my-form">
+                <label>
+                    <span>Salesperson:</span>
+                    <input type="text" id="hw-score" name="num1" min="0" autofocus placeholder="salesperson"><br>
+                </label>
+                <h2>Input the number of items sold for each item number</h2>
+
+                <label>
+                    <span>Item 1: </span>
+                    <input type="number" id="hw-score" name="num1" min="0" autofocus placeholder="item 1"><br>
+                </label>
+                <label>
+                    <span>Item 2: </span>
+                    <input type="number" id="hw-score" name="num1" min="0" autofocus placeholder="item 2"><br>
+                </label>
+                <label>
+                    <span>Item 3: </span>
+                    <input type="number" id="hw-score" name="num1" min="0" autofocus placeholder="item 3"><br>
+                </label>
+                <label>
+                    <span>Item 4: </span>
+                    <input type="number" id="hw-score" name="num1" min="0" autofocus placeholder="item 4"><br>
+                </label>
+
+                <input type="button" id="fadein-result" onclick="studentGrades()" value="Submit">
+
+                <input type="reset" onclick="resetResult()" value="Reset">
+            </form>
+            <div id="error"></div>
+        </div>
 
 
     </div>
