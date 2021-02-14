@@ -22,6 +22,7 @@ const studentGrades = () => {
 
     } else {
         handleError();
+
     }
 
 }
@@ -58,32 +59,28 @@ const averageTotal = (total) => {
 }
 
 const handleGrades = (total, letter) => {
-    document.getElementById("result").innerHTML = `
-    <p>
-    <strong>
-    Student Final Average: ${total} ${letter} <br>
-    </strong>
-    </p>`;
+    document.getElementById("result").value = (`
+    Student Final Average: ${total} ${letter} 
+    `);
+
     document.getElementById("error").innerHTML = ""
 
 }
 
 const handleGradesDandF = (total, letter) => {
-    document.getElementById("result").innerHTML = `
-    <p class="grades-d-f">
-    <strong>
-    Student Final Average: ${total} ${letter} <br>
-    Student must retake the course
-    </strong>
-    </p>`;
-    document.getElementById("error").innerHTML = ""
+    document.getElementById("result").value = (`
+    Student Final Average: ${total} ${letter} 
+    Student must retake the course`
+    );
 
+    document.getElementById("error").innerHTML = ""
 }
+
 
 const handleError = () => {
     document.getElementById("error").innerHTML = `
-        <p class="alert-error" >Enter valid values 0 - 100 and make sure all fields are filled with any number.</p>`
-    document.getElementById("result").innerHTML = ""
+    <p class="alert-error" >Enter valid values 0 - 100 and make sure all fields are filled with any number.</p>`;
+    document.getElementById("result").value = ""
 
 }
 
