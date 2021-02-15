@@ -44,11 +44,18 @@ const numberSold = (item1, item2, item3, item4) => {
 
 const total = (item1, item2, item3, item4) => {
 
-    document.getElementById("item-one-result").value = (item1 * 20.99).toFixed(2);
-    document.getElementById("item-two-result").value = (item2 * 12.75).toFixed(2);
-    document.getElementById("item-three-result").value = (item3 * 9.95).toFixed(2);
-    document.getElementById("item-four-result").value = (item4 * 35.89).toFixed(2);
+    let ione = document.getElementById("item-one-result").value = (item1 * 20.99).toFixed(2);
+    let itwo = document.getElementById("item-two-result").value = (item2 * 12.75).toFixed(2);
+    let ithree = document.getElementById("item-three-result").value = (item3 * 9.95).toFixed(2);
+    let ifour = document.getElementById("item-four-result").value = (item4 * 35.89).toFixed(2);
 
+    totalAmountSold(ione, itwo, ithree, ifour);
+}
+
+const totalAmountSold = (item1, item2, item3, item4) => {
+    let total = parseFloat(item1) + parseFloat(item2) + parseFloat(item3) + parseFloat(item4);
+    console.log(total);
+    document.getElementById("total-amount-sold").value = total.toFixed(2);
 }
 
 const handleError = () => {
@@ -63,6 +70,8 @@ const handleError = () => {
     document.getElementById("item-two-result").value = "";
     document.getElementById("item-three-result").value = "";
     document.getElementById("item-four-result").value = "";
+
+    document.getElementById("total-amount-sold").value = "";
 }
 
 const cleanError = () => {
