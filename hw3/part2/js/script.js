@@ -86,5 +86,21 @@ const handleError = () => {
 
 const cleanError = () => {
     document.getElementById("error").innerHTML = "";
+}
+
+const resetAll = () => {
+    document.getElementById("error").innerHTML = "";
+    document.getElementById("item-one").value = "";
+    document.getElementById("item-two").value = "";
+    document.getElementById("item-three").value = "";
+    document.getElementById("item-four").value = "";
+
+    document.getElementById("item-one-result").value = "";
+    document.getElementById("item-two-result").value = "";
+    document.getElementById("item-three-result").value = "";
+    document.getElementById("item-four-result").value = "";
+
+    document.getElementById("total-amount-sold").value = "";
+    document.getElementById("weekly-earns").value = "";
 
 }
