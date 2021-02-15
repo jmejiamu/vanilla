@@ -29,12 +29,20 @@ const checkIsNotNumber = (one, two, three, four) => {
         let test2 = document.getElementById("item-two").value = two;
         document.getElementById("item-three").value = three;
         document.getElementById("item-four").value = four;
+        cleanError();
     }
 }
 
 const handleError = () => {
     document.getElementById("error").innerHTML = `
     <p class="alert-error" >Enter valid values 0 - 100 and make sure all fields are filled with any number.</p>`;
-    document.getElementById("result").value = ""
+    document.getElementById("item-one").value = "";
+    document.getElementById("item-two").value = "";
+    document.getElementById("item-three").value = "";
+    document.getElementById("item-four").value = "";
+}
+
+const cleanError = () => {
+    document.getElementById("error").innerHTML = "";
 
 }
