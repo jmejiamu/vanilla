@@ -9,33 +9,44 @@ const itemInput = () => {
     let ithree = parseInt(three);
     let ifour = parseInt(four);
 
-
     checkIsNotNumber(ione, itwo, ithree, ifour);
-    // let test = document.getElementById("item-one").value = ione;
-    // let test2 = document.getElementById("item-two").value = itwo;
-    // document.getElementById("item-three").value = ithree;
-    // document.getElementById("item-four").value = ifour;
-
-    // console.log(test + test2);
 
 }
 
 const checkIsNotNumber = (one, two, three, four) => {
+
     let check = one + two + three + four;
+
     if (Number.isNaN(check)) {
         handleError();
     } else {
-        let test = document.getElementById("item-one").value = one;
-        let test2 = document.getElementById("item-two").value = two;
-        document.getElementById("item-three").value = three;
-        document.getElementById("item-four").value = four;
+        numberSold(one, two, three, four);
         cleanError();
     }
 }
 
+const numberSold = (item1, item2, item3, itemt4) => {
+
+    let one = document.getElementById("item-one").value = item1;
+    let two = document.getElementById("item-two").value = item2;
+    let three = document.getElementById("item-three").value = item3;
+    let four = document.getElementById("item-four").value = itemt4;
+
+    total(one, two, three, four);
+}
+
+const total = (item1, item2, item3, item4) => {
+
+    document.getElementById("item-one-result").value = item1 * 20.99;
+    document.getElementById("item-two-result").value = item2 * 12.75;
+    document.getElementById("item-three-result").value = item3 * 9.95;
+    document.getElementById("item-four-result").value = item4 * 35.89;
+
+}
+
 const handleError = () => {
     document.getElementById("error").innerHTML = `
-    <p class="alert-error" >Enter valid values 0 - 100 and make sure all fields are filled with any number.</p>`;
+    <p class="alert-error" >Enter valid numeric value and fill all the inputs.</p>`;
     document.getElementById("item-one").value = "";
     document.getElementById("item-two").value = "";
     document.getElementById("item-three").value = "";
