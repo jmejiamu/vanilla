@@ -39,85 +39,99 @@
             <form name="my-form">
                 <label>
                     <span>Salesperson:</span>
-                    <input type="text" id="salesperson-name" name="num1" min="0" autofocus placeholder="salesperson"
+                    <input type="text" id="salesperson-name" name="num1" min="0" autofocus
                         title="Please make sure that the salesperson's name is spelled correctly"><br>
                 </label>
                 <h2>Input the number of items sold for each item number</h2>
 
                 <label>
                     <span>Item 1: </span>
-                    <input type="number" id="item1" name="num1" min="0" autofocus placeholder="item 1"><br>
+                    <input type="number" id="item1" name="num1" min="0" autofocus><br>
                 </label>
                 <label>
                     <span>Item 2: </span>
-                    <input type="number" id="item2" name="num1" min="0" autofocus placeholder="item 2"><br>
+                    <input type="number" id="item2" name="num1" min="0"><br>
                 </label>
                 <label>
                     <span>Item 3: </span>
-                    <input type="number" id="item3" name="num1" min="0" autofocus placeholder="item 3"><br>
+                    <input type="number" id="item3" name="num1" min="0"><br>
                 </label>
                 <label>
                     <span>Item 4: </span>
-                    <input type="number" id="item4" name="num1" min="0" autofocus placeholder="item 4"><br>
+                    <input type="number" id="item4" name="num1" min="0"><br>
                 </label>
 
                 <input type="button" id="fadein-result" onclick="itemInput()" value="Submit">
 
                 <input type="reset" onclick="resetResult()" value="Reset">
-
+                <br>
                 <div id="error"></div>
+                <br>
+                <br>
 
                 <table>
                     <tr>
                         <th>Item #</th>
                         <th>Price</th>
                         <th>Number Sold</th>
-                        <th>total</th>
+                        <th>Total</th>
                     </tr>
                     <tr>
-                        <td>1</td>
-                        <td>$20.99</td>
-                        <td><input type="number" id="item-one" name="num1" min="0" readonly><br>
+                        <td class="table-data">1</td>
+                        <td class="table-data">$20.99</td>
+                        <td><input style="text-align: center;" type="number" id="item-one" name="num1" min="0"
+                                readonly><br>
                         </td>
-                        <td><input type="number" id="item-one-result" name="num1" min="0" readonly><br>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>$12.75</td>
-                        <td><input type="number" id="item-two" name="num1" min="0" readonly><br>
-                        </td>
-                        <td><input type="number" id="item-two-result" name="num1" min="0" readonly><br>
+                        <td><input style="text-align: center;" type="number" id="item-one-result" name="num1" min="0"
+                                readonly><br>
                         </td>
                     </tr>
                     <tr>
-                        <td>3</td>
-                        <td>$9.95</td>
-                        <td><input type="number" id="item-three" name="num1" min="0" readonly><br>
+                        <td class="table-data">2</td>
+                        <td class="table-data">$12.75</td>
+                        <td><input style="text-align: center;" type="number" id="item-two" name="num1" min="0"
+                                readonly><br>
                         </td>
-                        <td><input type="number" id="item-three-result" name="num1" min="0" readonly><br>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>$35.89</td>
-                        <td><input type="number" id="item-four" name="num1" min="0" readonly><br>
-                        </td>
-                        <td><input type="number" id="item-four-result" name="num1" min="0" readonly><br>
+                        <td><input style="text-align: center;" type="number" id="item-two-result" name="num1" min="0"
+                                readonly><br>
                         </td>
                     </tr>
                     <tr>
-                        <td>Total Amount Sold: </td>
+                        <td class="table-data">3</td>
+                        <td class="table-data">$9.95</td>
+                        <td><input style="text-align: center;" type="number" id="item-three" name="num1" min="0"
+                                readonly><br>
+                        </td>
+                        <td><input style="text-align: center;" type="number" id="item-three-result" name="num1" min="0"
+                                readonly><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table-data">4</td>
+                        <td class="table-data">$35.89</td>
+                        <td><input style="text-align: center;" type="number" id="item-four" name="num1" min="0"
+                                readonly><br>
+                        </td>
+                        <td><input style="text-align: center;" type="number" id="item-four-result" name="num1" min="0"
+                                readonly><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table-data"><strong>Total Amount Sold:</strong> </td>
                         <td></td>
                         <td></td>
-                        <td><input type="number" id="total-amount-sold" name="num1" min="0" readonly><br>
+                        <td><input style="text-align: center;" type="number" id="total-amount-sold" name="num1" min="0"
+                                readonly><br>
                         </td>
                     </tr>
                     <tr>
-                        <td>Total Weekly Earnings: </td>
+                        <td class="table-data">
+                            <strong>Total Weekly Earnings:</strong>
+                        </td>
                         <td></td>
                         <td></td>
-                        <td><input type="number" id="weekly-earns" name="num1" min="0" readonly><br>
+                        <td><input style="text-align: center;" type="number" id="weekly-earns" name="num1" min="0"
+                                readonly><br>
                         </td>
                     </tr>
                 </table>

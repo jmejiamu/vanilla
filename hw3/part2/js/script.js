@@ -81,6 +81,7 @@ const handleError = () => {
     document.getElementById("item-four-result").value = "";
 
     document.getElementById("total-amount-sold").value = "";
+    document.getElementById("weekly-earns").value = "";
 }
 
 const cleanError = () => {
