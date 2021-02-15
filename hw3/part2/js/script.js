@@ -54,8 +54,17 @@ const total = (item1, item2, item3, item4) => {
 
 const totalAmountSold = (item1, item2, item3, item4) => {
     let total = parseFloat(item1) + parseFloat(item2) + parseFloat(item3) + parseFloat(item4);
-    console.log(total);
-    document.getElementById("total-amount-sold").value = total.toFixed(2);
+    let grossTotal = document.getElementById("total-amount-sold").value = total.toFixed(2);
+
+    weeklyEarnings(grossTotal);
+}
+
+const weeklyEarnings = (total) => {
+    let salaryPerWeek = 250;
+    let percentOfGrossSales = 0.09;
+
+    let totalEarns = (percentOfGrossSales * parseFloat(total)) + salaryPerWeek;
+    document.getElementById("weekly-earns").value = totalEarns.toFixed(2);
 }
 
 const handleError = () => {
