@@ -9,7 +9,13 @@ const itemInput = () => {
     let ithree = parseInt(three);
     let ifour = parseInt(four);
 
-    checkIsNotNumber(ione, itwo, ithree, ifour);
+    // Check if the inputs are negtives
+    if ((ione >= 0) && (itwo >= 0) && (ithree >= 0) && (ifour >= 0)) {
+        checkIsNotNumber(ione, itwo, ithree, ifour);
+    } else {
+        handleError();
+    }
+
 
 }
 
@@ -17,7 +23,7 @@ const checkIsNotNumber = (one, two, three, four) => {
 
     let check = one + two + three + four;
 
-    if (Number.isNaN(check)) {
+    if ((Number.isNaN(check)) && (one < 0) && (two < 0) && (three < 0) && (four < 0)) {
         handleError();
     } else {
         numberSold(one, two, three, four);
@@ -25,22 +31,23 @@ const checkIsNotNumber = (one, two, three, four) => {
     }
 }
 
-const numberSold = (item1, item2, item3, itemt4) => {
+const numberSold = (item1, item2, item3, item4) => {
 
     let one = document.getElementById("item-one").value = item1;
     let two = document.getElementById("item-two").value = item2;
     let three = document.getElementById("item-three").value = item3;
-    let four = document.getElementById("item-four").value = itemt4;
+    let four = document.getElementById("item-four").value = item4;
 
     total(one, two, three, four);
+
 }
 
 const total = (item1, item2, item3, item4) => {
 
-    document.getElementById("item-one-result").value = item1 * 20.99;
-    document.getElementById("item-two-result").value = item2 * 12.75;
-    document.getElementById("item-three-result").value = item3 * 9.95;
-    document.getElementById("item-four-result").value = item4 * 35.89;
+    document.getElementById("item-one-result").value = (item1 * 20.99).toFixed(2);
+    document.getElementById("item-two-result").value = (item2 * 12.75).toFixed(2);
+    document.getElementById("item-three-result").value = (item3 * 9.95).toFixed(2);
+    document.getElementById("item-four-result").value = (item4 * 35.89).toFixed(2);
 
 }
 
@@ -51,6 +58,11 @@ const handleError = () => {
     document.getElementById("item-two").value = "";
     document.getElementById("item-three").value = "";
     document.getElementById("item-four").value = "";
+
+    document.getElementById("item-one-result").value = "";
+    document.getElementById("item-two-result").value = "";
+    document.getElementById("item-three-result").value = "";
+    document.getElementById("item-four-result").value = "";
 }
 
 const cleanError = () => {
