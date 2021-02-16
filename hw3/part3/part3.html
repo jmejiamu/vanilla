@@ -27,14 +27,15 @@
             <h1><strong>Celsius to Farenheit</strong></h1>
             <form name="my-form">
                 <label><strong>User Input:</strong></label>
-                <input type="number" id="hw-score" name="num1" min="0" autofocus><br>
+                <input type="number" id="user-input" name="num1" min="0" autofocus><br>
 
                 <label><strong>Covertion:</strong></label>
-                <input type="number" id="mt-score" name="num2"><br>
+                <input type="number" id="conversion" name="num2" readonly><br>
 
-                <input type="button" id="fadein-result" onclick="studentGrades()" value="Submit">
+                <input type="button" onclick="celciusToFarenheit()" value="Celsius to Farenheit">
+                <input type="button" onclick="farenheitToCelcius()" value="Farenheit to Celsius">
 
-                <input type="reset" onclick="resetResult()" value="Reset">
+                <input type="reset" onclick="resetAll()" value="Reset">
             </form>
             <div id="error"></div>
         </div>
