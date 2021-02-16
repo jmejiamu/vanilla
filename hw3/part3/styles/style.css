@@ -15,6 +15,28 @@ body{
 }
 /* End body margin *
 
+/* Link style */
+.btn-link{
+    text-align: center;
+    border-radius: 15px;
+    border: rgb(233, 48, 48);
+    border-style: solid;
+    border-width: thin;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-decoration: none;
+    color: rgb(211, 21, 21);
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.btn-link:hover{
+    background-color: #eb8484;
+    color: white;
+}
+/* End link style */
+
 /* Nav bar */
 .menu-order {
   float: left;
