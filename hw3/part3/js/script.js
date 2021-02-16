@@ -34,6 +34,14 @@ const farenheitToCelcius = () => {
 
 const handleError = () => {
     document.getElementById("error").innerHTML = `
-    <p class="alert-error" >Enter valid values 0 - 100 and make sure all fields are filled with any number.</p>`;
+    <p class="alert-error" >Enter valid **numeric** values.</p>`;
     document.getElementById("conversion").value = ""
+}
+
+
+const resetAll = () => {
+    document.getElementById("user-input").value = ""
+    document.getElementById("conversion").value = ""
+    document.getElementById("error").innerHTML = ""
+
 }
