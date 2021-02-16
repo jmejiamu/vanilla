@@ -18,9 +18,17 @@ const celciusToFarenheit = () => {
 const farenheitToCelcius = () => {
     let userInput = document.getElementById("user-input").value;
 
-    let conversion = 5 / 9 * (userInput - 32);
+    let input = parseInt(userInput)
 
-    document.getElementById("conversion").value = `${userInput}F is ${parseInt(conversion)}C`;
+    if (Number.isNaN(input)) {
+        handleError();
+    } else {
+
+        let conversion = 5 / 9 * (userInput - 32);
+
+        document.getElementById("conversion").value = `${userInput}F is ${parseInt(conversion)}C`;
+        document.getElementById("error").innerHTML = ""
+    }
 }
 
 
