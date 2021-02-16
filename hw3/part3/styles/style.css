@@ -119,6 +119,14 @@ body{
 }
 /* Form Style End  */
 
+/* Error style */
+#error{
+  color: red;
+  font-weight: bolder;
+  font-size: larger;
+}
+/* Error style End *
+
 
 /* Footer */
 .footer-style{
