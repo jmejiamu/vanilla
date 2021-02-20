@@ -32,7 +32,7 @@
             <h1><strong>Students Grades</strong></h1>
             <form name="my-form">
                 <label><strong>Homework score:</strong></label>
-                <input type="number" id="hw-score" name="num1" min="0" autofocus><br>
+                <input type="number" id="hw-score" name="num1" autofocus><br>
 
                 <label><strong>Min-term score:</strong></label>
                 <input type="number" id="mt-score" name="num2"><br>
@@ -43,8 +43,7 @@
                 <label><strong>Participation score:</strong></label>
                 <input type="number" id="p-score" name="num3"><br>
 
-                <textarea rows="6" cols="10" id="result" placeholder="Result" readonly
-                    style="height: fit-content;"></textarea>
+                <input type="text" id="result" placeholder="Result" readonly>
                 <input type="button" id="fadein-result" onclick="studentGrades()" value="Submit">
 
                 <input type="reset" onclick="resetResult()" value="Reset">
