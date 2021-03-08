@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Homework 4</title>
+    <meta name='description'
+        content='List of all assignments done by Jose Mejia Munoz for JavaScript,jQuery, AJAX course'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./styles/styles.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='./js/script.js' async></script>
+</head>
+
+<body>
+
+    <ul class="nav-style">
+        <li class="active-item menu-order"><a href="#home"><strong>CNIT 133</strong></a></li>
+        <li class="menu-order"><a href="/hw3/part1/part1.html"><strong>Part 1</strong></a></li>
+        <li class="menu-order"><a href="/hw3/part2/part2.html"><strong>Part 2</strong></a></li>
+    </ul>
+    <header>
+        <h1 class="title">Part 1</h1>
+    </header>
+    <div class="container">
+
+        <a class="btn-link" href="/hw3/hw3.html">Homework 3</a>
+
+        <div class="form-style">
+            <h1><strong>Students Grades</strong></h1>
+            <form name="my-form">
+                <label><strong>Homework score:</strong></label>
+                <input type="number" id="hw-score" name="num1" autofocus><br>
+
+                <label><strong>Min-term score:</strong></label>
+                <input type="number" id="mt-score" name="num2"><br>
+
+                <label><strong>Final Exam score:</strong></label>
+                <input type="number" id="fn-score" name="num3"><br>
+
+                <label><strong>Participation score:</strong></label>
+                <input type="number" id="p-score" name="num3"><br>
+
+                <input type="text" id="result" placeholder="Result" readonly>
+                <input type="button" id="fadein-result" onclick="studentGrades()" value="Submit">
+
+                <input type="reset" onclick="resetResult()" value="Reset">
+            </form>
+            <div id="error"></div>
+        </div>
+
+    </div>
+
+    <footer class="footer-style">
+        <p>Jose Mejia Munoz | City College of San Francisco</p>
+        <a href="https://github.com/jmejiamu"><i class="fa fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/jose-h-mejia-munoz/"><i class="fa fa-linkedin"></i></a>
+        <a href="https://jmejiamu.github.io/portafolio/"><i class="fa fa-internet-explorer"></i></a>
+    </footer>
+
+</body>
+
+</html>
