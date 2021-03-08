@@ -25,27 +25,18 @@
     </header>
     <div class="container">
 
-        <a class="btn-link" href="/hw3/hw3.html">Homework 3</a>
+        <a class="btn-link" href="/hw3/hw3.html">Homework 4</a>
 
         <div class="form-style">
-            <h1><strong>Students Grades</strong></h1>
+            <h1><strong>Sum and Multiplication</strong></h1>
             <form name="my-form">
                 <label><strong>Homework score:</strong></label>
-                <input type="number" id="hw-score" name="num1" autofocus><br>
-
-                <label><strong>Min-term score:</strong></label>
-                <input type="number" id="mt-score" name="num2"><br>
-
-                <label><strong>Final Exam score:</strong></label>
-                <input type="number" id="fn-score" name="num3"><br>
-
-                <label><strong>Participation score:</strong></label>
-                <input type="number" id="p-score" name="num3"><br>
-
+                <br>
                 <input type="text" id="result" placeholder="Result" readonly>
-                <input type="button" id="fadein-result" onclick="studentGrades()" value="Submit">
+                <div id="sum"> </div>
+                <p id="mul"></p>
+                <input type="button" id="fadein-result" onclick="showResults()" value="Show Result">
 
-                <input type="reset" onclick="resetResult()" value="Reset">
             </form>
             <div id="error"></div>
         </div>
