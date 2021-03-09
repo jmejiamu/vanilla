@@ -91,10 +91,31 @@ i{
 }
 /* End Footer  */
 
-/* Draggable style */
-#draggable{
-  text-align: center;
+
+/* table styles */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th{
+  background-color: darkred ;
+  color: #dddddd;
   font-weight: bold;
-  color: #E32526;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+}
+tr:nth-child(odd) {
+  background-color: #494949;
+  color: #dddddd;
+  
+}
+tr:nth-child(even) {
+  background-color: #2c2b2b;
+  color: #dddddd;
+  
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
 }
