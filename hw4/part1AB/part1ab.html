@@ -9,7 +9,18 @@
         content='List of all assignments done by Jose Mejia Munoz for JavaScript,jQuery, AJAX course'>
     <link rel='stylesheet' type='text/css' media='screen' href='./styles/styles.css'>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+    <script async>
+        $(function () {
+            $("#draggable").draggable();
+        });
+    </script>
     <script src='./js/script.js' async></script>
 </head>
 
@@ -27,19 +38,23 @@
 
         <a class="btn-link" href="/hw3/hw3.html">Homework 4</a>
 
-        <div class="form-style">
-            <h1><strong>Sum and Multiplication Using For Loop</strong></h1>
+
+        <h1><strong>Sum and Multiplication Using For Loop</strong></h1>
 
 
-            <div id="sum"> </div>
-            <div id="mul"></div>
-            <br>
-            <h1><strong>Sum and Multiplication Using While Loop</strong></h1>
+        <div id="sum"> </div>
+        <div id="mul"></div>
+        <br>
+        <h1><strong>Sum and Multiplication Using While Loop</strong></h1>
 
-            <div id="sumW"></div>
-            <div id="mulW"></div>
+        <div id="sumW"></div>
+        <div id="mulW"></div>
 
+        <div id="draggable" class="ui-widget-content">
+            <p>Drag me around</p>
         </div>
+
+    </div>
 
     </div>
 
