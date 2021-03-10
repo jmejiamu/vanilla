@@ -1,16 +1,10 @@
 // formula P(1 + r)^n
 // 1000(1 + 0.05)**1
+// ###################### TABLE ONE #########################
 let p = 1000;
-let percent = 0.05
+let percent = 0.05;
 let n = 1 + percent;
-// console.log(p * n ** 2)
-let total = p * n;
-
-
-for (let i = 1; i <= 10; i++) {
-    console.log(p * n ** i);
-}
-
+document.write("<h1>Interest at 5%</h1>")
 
 document.write("<table>")
 document.write("<tr>")
@@ -36,16 +30,61 @@ for (row = 1; row <= 10; row++) {
 }
 document.write("</table>")
 
-const test = (test1) => {
-    document.getElementById("tb1").innerHTML = `<p>Thisis  ${test1}</p>`
+document.write("<br>")
+document.write("<br>")
+
+// ###################### END TABLE ONE #########################
+
+// ###################### TABLE TWO #########################
+let ptbTwo = 1000;
+let percentTbTwo = 0.06;
+let ntbTwo = 1 + percentTbTwo;
+
+
+document.write("<h1>Interest at 6%</h1>")
+document.write("<table>")
+document.write("<tr>")
+document.write("<th>Year</th>")
+document.write("<th>Amount on deposit</th>")
+document.write("<th>Interest Rate</th>")
+document.write("</tr>")
+for (row = 1; row <= 10; row++) {
+    let result = ptbTwo * ntbTwo ** row;
+
+    document.write("<tr>")
+    document.write(`<td>${row}</td>`)
+    document.write(`<td>${result.toLocaleString(undefined,
+        { 'minimumFractionDigits': 2, 'maximumFractionDigits': 2 })}</td>`)
+    document.write(`<td>${percentTbTwo}</td>`)
+    document.write("</tr>")
 }
+document.write("</table>")
+
+// ###################### END TABLE TWO #########################
+
+// ###################### TABLE THREE #########################
+let ptbThree = 1000;
+let percentTbThree = 0.07;
+let ntbThree = 1 + percentTbThree;
 
 
-window.onload = () => {
+document.write("<h1>Interest at 7%</h1>")
+document.write("<table>")
+document.write("<tr>")
+document.write("<th>Year</th>")
+document.write("<th>Amount on deposit</th>")
+document.write("<th>Interest Rate</th>")
+document.write("</tr>")
+for (row = 1; row <= 10; row++) {
+    let result = ptbThree * ntbThree ** row;
 
-    test("This is a parametter")
+    document.write("<tr>")
+    document.write(`<td>${row}</td>`)
+    document.write(`<td>${result.toLocaleString(undefined,
+        { 'minimumFractionDigits': 2, 'maximumFractionDigits': 2 })}</td>`)
+    document.write(`<td>${percentTbThree}</td>`)
+    document.write("</tr>")
 }
-window.onload = () => {
+document.write("</table>")
 
-    test("Nother test ")
-}
+// ###################### END TABLE THREE #########################
