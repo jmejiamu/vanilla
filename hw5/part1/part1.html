@@ -44,6 +44,11 @@
             <label for="female">Female</label><br>
             <input type="radio" id="other" name="gender" value="other">
             <label for="other">Other</label><br>
+            <div id="error">
+
+            </div>
+
+
 
             <p>Select your Fields of study</p>
             <input type="checkbox" id="option1" name="option1" value="fronend">
@@ -53,19 +58,27 @@
             <input type="checkbox" id="option3" name="option" value="fullstack">
             <label for="option3"> Full Stack</label><br><br>
 
-            <label for="cars">Year of graduation: </label><br>
-            <select name="cars" id="cars" required>
+            <div id="errorCareer">
+            </div>
+
+            <label for="year">Year of graduation: </label><br>
+            <select name="year" id="cars" required>
                 <option value="">None</option>
-                <option value="volvo">2021</option>
-                <option value="saab">2022</option>
-                <option value="mercedes">2023</option>
-                <option value="audi">2024</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
             </select>
             <br><br>
 
-            <input type="submit" value="Submit" onclick="checkForm()">
+            <input type="button" value="Submit" onclick="checkForm()">
+            <!-- <button type="submit" onsubmit="checkForm()">Submet</button> -->
 
         </form>
+
+        <div id="success">
+
+        </div>
 
 
 
