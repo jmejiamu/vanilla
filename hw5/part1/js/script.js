@@ -37,7 +37,7 @@ const handleError = () => {
 
 const submitSuccess = () => {
     document.getElementById("success").innerHTML = `
-    <p class="su">data submitted successful</p> `;
+    <p class="su">Data submitted successfully </p> `;
 
     //Clean errors
     document.getElementById("error").innerHTML = ""
