@@ -37,6 +37,13 @@ body{
     color: white;
 }
 /* End link style */
+/* Error style */
+.alert-error{
+  color: red;
+  font-weight: bolder;
+  font-size: larger;
+}
+/* Error style End */
 
 
 
