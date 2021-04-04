@@ -35,7 +35,10 @@
         <h2>Part A</h2>
         <form>
             <label> Enter a name : </label>
-            <input required />
+            <input id="user-name" required />
+            <div id="errorInput">
+
+            </div>
             <br />
             <p>Select yout gender</p>
             <input type="radio" id="male" name="gender" value="male">
@@ -62,13 +65,15 @@
             </div>
 
             <label for="year">Year of graduation: </label><br>
-            <select name="year" id="cars" required>
+            <select name="year" id="years" required>
                 <option value="">None</option>
                 <option value="2021">2021</option>
                 <option value="2022">2022</option>
                 <option value="2023">2023</option>
                 <option value="2024">2024</option>
             </select>
+            <div id="errorDrop">
+            </div>
             <br><br>
 
             <input type="button" value="Submit" onclick="checkForm()">

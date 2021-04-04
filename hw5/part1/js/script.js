@@ -17,12 +17,7 @@ const checkForm = () => {
         handleError();
 
     }
-    // if (!male && !female && !other) {
-    //     handleError();
-    // } else {
 
-    //     document.getElementById("error").innerHTML = ""
-    // }
 
 }
 
