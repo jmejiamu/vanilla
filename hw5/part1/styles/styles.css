@@ -45,6 +45,15 @@ body{
 }
 /* Error style End */
 
+/* success style */
+#success{
+  color: rgba(48, 102, 250, 0.959);
+  font-weight: bolder;
+  font-size: larger;
+}
+/* Success style End */
+
+
 
 
 /* Nav bar */

@@ -28,7 +28,6 @@ const checkForm = () => {
 }
 
 
-
 const handleError = () => {
     document.getElementById("error").innerHTML = `
     <p class="alert-error">Complete all the  fields</p> `;
