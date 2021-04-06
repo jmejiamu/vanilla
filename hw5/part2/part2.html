@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Homework 5</title>
+  <meta name='description'
+    content='List of all assignments done by Jose Mejia Munoz for JavaScript,jQuery, AJAX course'>
+  <link rel='stylesheet' type='text/css' media='screen' href='./styles/styles.css'>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <script src='./js/script.js'></script>
+</head>
+
+<body>
+
+  <ul class="nav-style">
+    <li class="active-item menu-order"><a href="#home"><strong>CNIT 133</strong></a></li>
+    <li class="menu-order"><a href="/hw5/hw5.html"><strong>Homework 5</strong></a></li>
+    <li class="menu-order"><a href="/hw5/part1/part1.html"><strong>Part 1</strong></a></li>
+    <li class="menu-order"><a href="/hw4/part2/part2.html"><strong>Part 2</strong></a></li>
+  </ul>
+  <header>
+    <h1 class="title">Part 1</h1>
+  </header>
+  <div class="container">
+
+    <div class="form-style-6">
+
+      <h1>Part A</h1>
+      <form>
+        <label> Enter a name </label>
+        <input type="text" id="user-name" required />
+        <div id="errorInput">
+
+        </div>
+        <br />
+        <p>Select yout gender</p>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br>
+
+
+        <p>Select your Fields of study</p>
+        <input type="checkbox" id="option1" name="option1" value="fronend">
+        <label for="option1"> Front End</label><br>
+        <input type="checkbox" id="option2" name="option" value="backend">
+        <label for="option2"> Back End</label><br>
+        <input type="checkbox" id="option3" name="option" value="fullstack">
+        <label for="option3"> Full Stack</label><br><br>
+
+        <div id="errorCareer">
+        </div>
+
+        <label for="year">Year of graduation: </label><br>
+        <select name="year" id="years" required>
+          <option value="">None</option>
+          <option value="2021">2021</option>
+          <option value="2022">2022</option>
+          <option value="2023">2023</option>
+          <option value="2024">2024</option>
+        </select>
+        <div id="errorDrop">
+        </div>
+        <br><br>
+
+        <input class="hw1-btn-style" type="button" value="Submit" onclick="checkForm()">
+
+      </form>
+      <div id="error">
+
+      </div>
+
+      <div id="success">
+
+      </div>
+
+
+    </div>
+
+
+
+
+  </div>
+
+  </div>
+
+  <footer class="footer-style">
+    <p>Jose Mejia Munoz | City College of San Francisco</p>
+    <a href="https://github.com/jmejiamu"><i class="fa fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/jose-h-mejia-munoz/"><i class="fa fa-linkedin"></i></a>
+    <a href="https://jmejiamu.github.io/portafolio/"><i class="fa fa-internet-explorer"></i></a>
+  </footer>
+
+</body>
+
+</html>
