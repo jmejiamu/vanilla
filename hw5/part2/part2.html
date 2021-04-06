@@ -36,9 +36,9 @@
 
                 <h1>Part B Pulldown Menus</h1>
                 <form>
-                    <h2>Using onclick event handler</h2>
+                    <h2>Using onchange event handler</h2>
                     <label for="description">Select an option: </label><br>
-                    <select name="destination" id="destinatio" required>
+                    <select name="destinationOne" id="destinationOne" required onchange="onChangeEventHandler()">
                         <option value="none">None</option>
                         <option value="https://www.linkedin.com/in/jose-h-mejia-munoz/">LinkedIn</option>
                         <option value="https://github.com/jmejiamu">GitHub</option>
@@ -48,9 +48,9 @@
 
 
                 </form>
-                <!-- <div id="error">
+                <div id="errorOnChange">
 
-                </div> -->
+                </div>
             </div>
 
             <div class="form-style-6">

@@ -1,3 +1,16 @@
+const onChangeEventHandler = () => {
+    let onChangeEvent = document.getElementById('destinationOne').value;
+
+    if (onChangeEvent !== "none") {
+        window.open(onChangeEvent);
+    } else {
+        console.log("Error");
+    }
+
+
+}
+
+
 
 const onClickEventHandler = () => {
     let dropDown = document.getElementById('destination').value;
