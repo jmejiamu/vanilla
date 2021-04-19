@@ -46,26 +46,11 @@ function myFunction() {
 
             if (txtValue.toUpperCase().indexOf(filter) > -1) {
                 tr[i].style.display = "";
-                document.getElementById("error").innerHTML = "";
             } else {
                 tr[i].style.display = "none";
-                document.getElementById("error").innerHTML = `
-                <p class="alert-error">Select an option </p> `;
             }
         }
 
-        // if (td2) {
-        //     txtValue = td2.textContent || td2.innerText;
-        //     console.log(txtValue);
-        //     if (txtValue.toUpperCase().indexOf(filter) > -1) {
-        //         tr[i].style.display = "";
-        //         document.getElementById("error").innerHTML = "";
-        //     } else {
-        //         tr[i].style.display = "none";
-        //         document.getElementById("error").innerHTML = `
-        //         <p class="alert-error">Select an option </p> `;
-        //     }
-        // }
     }
 }
 

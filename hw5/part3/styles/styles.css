@@ -223,3 +223,10 @@ i {
 	background: #2EBC99;
 }
 /* Form Style End */
+
+/* Table style */
+table{
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 200px;
+}
