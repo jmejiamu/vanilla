@@ -1,57 +1,41 @@
 
-function createTable(tableData) {
 
-    var table = document.createElement('table');
-    table.setAttribute('id', 'myTable');
+const ABB = 0;
+const STATE_NAME = 1
+const STATE_CAPITAL = 2;
+const STATE_POPULATION = 3
 
-    var tableBody = document.createElement('tbody');
+let states = [
+    ['AL', 'AK', 'AZ', 'AR', 'CA', 'CO'],
+    ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado'],
+    ['Montgomery', 'Juneau', 'Phoenix', 'Little Rock', 'Sacramento', 'Denver'],
+    ['4,903,185', '731,545', '7,278,717', '3,017,825', '39,512,223', '5,758,736']
+]
+const search = () => {
+    let found = false;
+    let input = document.getElementById("looking").value;
 
-    tableData.forEach(function (rowData) {
-        var row = document.createElement('tr');
 
-        rowData.forEach(function (cellData) {
-            var cell = document.createElement('td');
-            cell.appendChild(document.createTextNode(cellData));
-            row.appendChild(cell);
-        });
-
-        tableBody.appendChild(row);
-    });
-
-    table.appendChild(tableBody);
-    document.body.appendChild(table);
-}
-
-createTable([
-    ["State Abbr", "State Name", "Capital", "Population"],
-    ["AL", "Alabama", "Montgomery", "4,903,185"],
-    ["AK", "Alaska", "Juneau", "731,545"],
-    ["AZ", "Arizona", "Phoenix", "7,278,717"],
-    ["AR", "Arkansas", "Little Rock", "3,017,825"],
-    ["CA", "California", "Sacramento", "39,512,223"],
-    ["CO", "Colorado", "Denver", "5,758,736"],
-]);
-
-function myFunction() {
-    var input, filter, table, tr, td, td2, i, txtValue;
-    input = document.getElementById("myInput");
-    filter = input.value.toUpperCase();
-    table = document.getElementById("myTable");
-    tr = table.getElementsByTagName("tr");
-    for (i = 1; i < tr.length; i++) {
-        td = tr[i].getElementsByTagName("td")[0];
-        // td2 = tr[i].getElementsByTagName("td")[1];
-        if (td) {
-            txtValue = td.textContent || td.innerText;
-
-            if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                tr[i].style.display = "";
-            } else {
-                tr[i].style.display = "none";
+    for (let r = 0; r < states.length; r++) {
+        for (let c = 0; c < 6; c++) {
+            if (states[ABB][c].toLocaleLowerCase() === input.toLowerCase() || states[STATE_NAME][c].toLocaleLowerCase() === input.toLowerCase()) {
+                document.getElementById('result').innerHTML = `
+                <p>Thanks for your inquiry, here is the information you requested:</p>
+               <p> State abbr = ${states[ABB][c]}</p>
+               <p> State Name = ${states[STATE_NAME][c]}</p>
+                <p>Capital = ${states[STATE_CAPITAL][c]}</p>
+                <p>Population = ${states[STATE_POPULATION][c]}</p>
+        `
+                found = true
             }
         }
 
     }
-}
+    console.log(found);
+    if (!found) {
+        document.getElementById("result").innerHTML = ""
+        document.getElementById("error").innerHTML = "The database does not have information about this state, we only have information about AL, AK, AZ, AR, CA, and CO"
 
+    }
+}
 
