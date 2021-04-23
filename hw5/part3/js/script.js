@@ -31,7 +31,7 @@ const search = () => {
         }
 
     }
-    console.log(found);
+
     if (!found) {
         document.getElementById("result").innerHTML = ""
         document.getElementById("error").innerHTML = "The database does not have information about this state, we only have information about AL, AK, AZ, AR, CA, and CO"
