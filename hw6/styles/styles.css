@@ -9,6 +9,13 @@ body{
   margin-bottom: 200px;
 }
 /* End body margin */
+
+/* Title */
+.title{
+  text-align: center;
+}
+/* End title */
+
   /* Nav bar */
   .menu-order {
     float: left;
