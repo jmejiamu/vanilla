@@ -23,28 +23,27 @@
     </header>
     <div class="container">
         <div class="testbox">
-            <form action="/">
+            <form>
                 <div class="banner">
                     <h1>Part 1</h1>
                 </div>
                 <div class="item">
                     <label>Enter a Floting number
                         <div class="name-item">
-                            <input type="text" name="name" placeholder="Float" />
-
+                            <input type="text" id="enter-number" name="name" placeholder="Float" />
                         </div>
                     </label>
                 </div>
 
                 <div class="item">
                     <label>Your answer
-                        <textarea rows="3"></textarea>
+                        <textarea rows="4" id="result" readonly></textarea>
                     </label>
                 </div>
-                <div class="btn-block">
-                    <button type="submit" href="/">Submit</button>
-                </div>
             </form>
+        </div>
+        <div class="btn-block">
+            <button type="submit" onclick="submitNumber()">Submit</button>
         </div>
 
     </div>
