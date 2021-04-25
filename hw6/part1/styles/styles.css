@@ -2,3 +2,74 @@ body{
   margin: 0;
   font-family: 'Barlow Condensed', sans-serif;
 }
+
+/* Nav bar */
+.menu-order {
+  float: left;
+}
+
+.menu-order a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.menu-order a:hover:not(.active-item) {
+  background-color: #111;
+}
+
+.active-item {
+    background-color: #E32526;
+}
+
+.nav-style {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* End nav bar */
+
+/* Collapse style */
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.collapsible:after {
+    content: "\2212";
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: '\002B';
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+
+}
+
+/* End collapse */
