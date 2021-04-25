@@ -26,6 +26,13 @@ const cleanErrorDecimal = () => {
 
 }
 
+const clearData = () => {
+    document.getElementById('error-decimal').innerHTML = "";
+    document.getElementById('result').innerHTML = "";
+    document.getElementById('enter-number').value = "";
+
+}
+
 const finalResult = (number) => {
 
     let tenthPosition = parseFloat(number).toFixed(1);
