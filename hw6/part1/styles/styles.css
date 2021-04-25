@@ -173,6 +173,12 @@ html, body {
     }
 /* Form end */
 
+/* Styling result */
+#result{
+  font-weight: bold;
+}
+/* End Style result */
+
 
 /* Footer */
 .footer-style{
