@@ -18,6 +18,7 @@ const submitNumber = () => {
 
 const errorHandle = () => {
     document.getElementById('error-decimal').innerHTML = "Please Enter a number with at least 4 decimal position";
+    document.getElementById('result').innerHTML = "";
 }
 
 const cleanErrorDecimal = () => {
