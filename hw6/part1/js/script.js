@@ -31,6 +31,7 @@ const finalResult = (number) => {
     console.log(number);
     let tenthPosition = parseFloat(number).toFixed(1);
     document.getElementById('result').innerHTML = `
+        Original Number: ${number}
         A) Nearest Integer: ${Math.round(number)}
         B) Square Root & round it to an int: ${parseInt(Math.sqrt(number))}
         C) Tenths Position: ${tenthPosition}
