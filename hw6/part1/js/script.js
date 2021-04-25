@@ -39,5 +39,4 @@ const finalResult = (number) => {
         D) Hundredths Position: ${hundredthsPosition}
         E) Thousandths Position: ${thousandthsPosition}
     `
-
 }
