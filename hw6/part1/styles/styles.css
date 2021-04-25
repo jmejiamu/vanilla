@@ -58,6 +58,7 @@ html, body {
   font-size: 14px;
   color: #666;
   line-height: 22px;
+  font-weight: bolder;
   }
   h1 {
   position: absolute;
@@ -178,6 +179,12 @@ html, body {
   font-weight: bold;
 }
 /* End Style result */
+
+/* Error */
+#error-decimal{
+  color: #ff4949;
+}
+/* End Error */
 
 
 /* Footer */
