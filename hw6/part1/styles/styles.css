@@ -3,6 +3,18 @@ body{
   font-family: 'Barlow Condensed', sans-serif;
 }
 
+.title{
+  text-align: center;
+}
+
+/* body margin */
+.container{
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 200px;
+}
+/* End body margin */
+
 /* Nav bar */
 .menu-order {
   float: left;
@@ -73,6 +85,7 @@ body{
 }
 
 /* End collapse */
+
 
 /* Footer */
 .footer-style{
