@@ -3,11 +3,9 @@
 const submitNumber = () => {
 
     const number = document.getElementById('enter-number').value;
-    // const convertNumber = parseFloat(number);
 
     const checkDecimal = number.split(".");
 
-    // console.log(number[1].length);
 
     if (checkDecimal[1] === undefined || checkDecimal[1].length < 4) {
         errorHandle();
@@ -16,14 +14,7 @@ const submitNumber = () => {
         finalResult(number);
     }
 
-    // console.log(Number.isInteger(number));
 
-    // if (number.length - (number.indexOf(".") + 1) < DECIMAL) {
-    //     errorHandle();
-    // } else {
-    //     cleanErrorDecimal()
-    //     document.getElementById("result").innerHTML = number;
-    // }
 
 }
 
