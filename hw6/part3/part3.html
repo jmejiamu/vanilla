@@ -37,9 +37,18 @@
                 <div class="item">
 
 
-                    <label>Search char
+                    <label>Enter a phone number
                         <div class="name-item">
                             <input type="text" id="phone" name="phone-number" />
+                            <p id="error-char"></p>
+                        </div>
+                        <div class="center-result">
+                            <p id="search-result"></p>
+                        </div>
+                    </label>
+                    <label>Area Code
+                        <div class="name-item">
+                            <input type="text" id="area-code" name="name" readonly />
                             <p id="error-char"></p>
                         </div>
                         <div class="center-result">
@@ -56,7 +65,7 @@
             </form>
         </div>
         <div class="btn-block">
-            <button type="submit" onclick="submitTextAndSearch()">Submit</button>
+            <button type="submit" onclick="submitData()">Submit</button>
             <button type="reset" onclick="clearData()">Clear</button>
         </div>
 
