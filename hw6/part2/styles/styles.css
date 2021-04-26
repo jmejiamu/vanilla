@@ -19,6 +19,8 @@ body{
 
 .center-result{
   text-align: center;
+  color: #0087cc;
+  font-size: large;
 }
 
 /* End result */
@@ -189,7 +191,7 @@ html, body {
 /* End Style result */
 
 /* Error */
-#error-decimal{
+#error-char, #error-text{
   color: #ff4949;
 }
 /* End Error */
