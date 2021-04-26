@@ -10,7 +10,16 @@
     <link rel='stylesheet' type='text/css' media='screen' href='./styles/styles.css'>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+
+
     <script src='./js/script.js' async></script>
+    <!-- <script>
+
+        $('#phone').mask('(000) 000-0000');
+    </script> -->
 </head>
 
 <body>
@@ -23,19 +32,14 @@
         <div class="testbox">
             <form>
                 <div class="banner">
-                    <h1>Part 2</h1>
+                    <h1>Part 3</h1>
                 </div>
                 <div class="item">
-                    <label>Enter a text
-                        <div class="name-item">
-                            <textarea id="enter-text" name="name" required></textarea>
-                            <p id="error-text"></p>
-                        </div>
-                    </label>
+
 
                     <label>Search char
                         <div class="name-item">
-                            <input type="text" id="search-char" name="text" maxlength="1" required />
+                            <input type="text" id="phone" name="phone-number" />
                             <p id="error-char"></p>
                         </div>
                         <div class="center-result">
