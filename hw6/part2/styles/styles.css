@@ -15,6 +15,14 @@ body{
 }
 /* End body margin */
 
+/* result  */
+
+.center-result{
+  text-align: center;
+}
+
+/* End result */
+
 /* Nav bar */
 .menu-order {
   float: left;
@@ -175,7 +183,7 @@ html, body {
 /* Form end */
 
 /* Styling result */
-#result{
+#original-text{
   font-weight: bold;
 }
 /* End Style result */
