@@ -35,6 +35,7 @@ const clearData = () => {
 
 const finalResult = (number) => {
 
+
     let tenthPosition = parseFloat(number).toFixed(1);
     let hundredthsPosition = parseFloat(number).toFixed(2);
     let thousandthsPosition = parseFloat(number).toFixed(3);
@@ -48,4 +49,5 @@ const finalResult = (number) => {
         E) Thousandths Position: ${thousandthsPosition}
         
     `
+    document.getElementById('enter-number').value = "";
 }
