@@ -15,6 +15,7 @@ const submitTextAndSearch = () => {
     } else {
 
         if (charToSearch.length === 0) {
+            document.getElementById("error-text").innerHTML = "";
             document.getElementById("error-char").innerHTML = "This cannot be empty"
             document.getElementById("search-result").innerHTML = ""
         } else {
@@ -29,10 +30,10 @@ const submitTextAndSearch = () => {
             }
 
             document.getElementById("search-result").innerHTML = `The letter <strong>${charToSearch}</strong> was found ${countChar}`;
+            document.getElementById("original-text").innerHTML = userText;
         }
     }
 
 
 
-    document.getElementById("original-text").innerHTML = userText;
 }
