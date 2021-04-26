@@ -4,7 +4,6 @@ const submitTextAndSearch = () => {
 
     let userText = document.getElementById("enter-text").value;
     let userTextToLower = userText.toLowerCase();
-    console.log(">>>", userText.length);
 
     let charToSearch = document.getElementById("search-char").value;
     let charToSearchToLower = charToSearch.toLowerCase().charAt(0);
@@ -29,11 +28,18 @@ const submitTextAndSearch = () => {
                 }
             }
 
-            document.getElementById("search-result").innerHTML = `The letter <strong>${charToSearch}</strong> was found ${countChar}`;
+            document.getElementById("search-result").innerHTML = `The letter <strong>${charToSearch}</strong> was found ${countChar} times`;
             document.getElementById("original-text").innerHTML = userText;
         }
     }
 
+}
 
 
+const clearData = () => {
+    document.getElementById("error-text").innerHTML = "";
+    document.getElementById("error-char").innerHTML = "";
+    document.getElementById("search-result").innerHTML = "";
+    document.getElementById("enter-text").value = "";
+    document.getElementById("search-char").value = "";
 }
