@@ -17,3 +17,11 @@ const submitData = () => {
     document.getElementById("four-code").value = `${fourDigit[1]}`;
 
 }
+
+const clearData = () => {
+    document.getElementById('phone').value = ``;
+    document.getElementById("area-code").value = ``;
+    document.getElementById("three-code").value = ``;
+    document.getElementById("four-code").value = ``;
+
+}
