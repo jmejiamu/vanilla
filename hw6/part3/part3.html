@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Homework 6</title>
+    <meta name='description'
+        content='List of all assignments done by Jose Mejia Munoz for JavaScript,jQuery, AJAX course'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./styles/styles.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='./js/script.js' async></script>
+</head>
+
+<body>
+    <ul class="nav-style">
+        <li class="active-item menu-order"><a href="#home"><strong>CNIT 133</strong></a></li>
+        <li class="menu-order"><a href="/index.html"><strong>Homework 1</strong></a></li>
+    </ul>
+
+    <div class="container">
+        <div class="testbox">
+            <form>
+                <div class="banner">
+                    <h1>Part 2</h1>
+                </div>
+                <div class="item">
+                    <label>Enter a text
+                        <div class="name-item">
+                            <textarea id="enter-text" name="name" required></textarea>
+                            <p id="error-text"></p>
+                        </div>
+                    </label>
+
+                    <label>Search char
+                        <div class="name-item">
+                            <input type="text" id="search-char" name="text" maxlength="1" required />
+                            <p id="error-char"></p>
+                        </div>
+                        <div class="center-result">
+                            <p id="search-result"></p>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="item">
+                    <label>Original Text
+                        <textarea rows="4" id="original-text" readonly></textarea>
+                    </label>
+                </div>
+            </form>
+        </div>
+        <div class="btn-block">
+            <button type="submit" onclick="submitTextAndSearch()">Submit</button>
+            <button type="reset" onclick="clearData()">Clear</button>
+        </div>
+
+
+    </div>
+
+    <footer class="footer-style">
+        <p>Jose Mejia Munoz | City College of San Francisco</p>
+        <a href="https://github.com/jmejiamu"><i class="fa fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/jose-h-mejia-munoz/"><i class="fa fa-linkedin"></i></a>
+        <a href="https://jmejiamu.github.io/portafolio/"><i class="fa fa-internet-explorer"></i></a>
+    </footer>
+
+</body>
+
+</html>
