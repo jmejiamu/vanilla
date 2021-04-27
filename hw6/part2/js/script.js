@@ -42,4 +42,5 @@ const clearData = () => {
     document.getElementById("search-result").innerHTML = "";
     document.getElementById("enter-text").value = "";
     document.getElementById("search-char").value = "";
+    document.getElementById("original-text").value = "";
 }
