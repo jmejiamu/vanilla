@@ -12,8 +12,8 @@ const submitTextAndSearch = () => {
         document.getElementById("error-text").innerHTML = "This cannot be empty";
         document.getElementById("search-result").innerHTML = "";
         document.getElementById("original-text").value = "";
-        document.getElementById("search-char").value = ""
-        // console.log("HereS");
+        document.getElementById("search-char").value = "";
+
     } else {
 
         if (charToSearch.length === 0) {
