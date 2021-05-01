@@ -12,6 +12,8 @@ const submitTextAndSearch = () => {
         document.getElementById("error-text").innerHTML = "This cannot be empty";
         document.getElementById("search-result").innerHTML = "";
         document.getElementById("original-text").value = "";
+        document.getElementById("search-char").value = ""
+        // console.log("HereS");
     } else {
 
         if (charToSearch.length === 0) {
@@ -29,9 +31,11 @@ const submitTextAndSearch = () => {
                 }
             }
 
+            document.getElementById("original-text").value = userText;
             document.getElementById("search-result").innerHTML = `The letter <strong>${charToSearch}</strong> was found ${countChar} times`;
-            document.getElementById("original-text").innerHTML = userText;
+
         }
+
     }
 
 }
