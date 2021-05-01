@@ -49,3 +49,4 @@ const clearData = () => {
     document.getElementById("search-char").value = "";
     document.getElementById("original-text").value = "";
 }
+
