@@ -77,16 +77,14 @@ h2.close:after{
   content: "\2212";
 }
 
-/* .c {
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
-
-} */
-
 /* End collapse */
+
+/* Marging for button in the drop-down  */
+  .margin-btn{
+      margin-bottom: 20px;
+  }
+  
+  /* End Marging  *
 
 /* Link style */
 .btn-link{
