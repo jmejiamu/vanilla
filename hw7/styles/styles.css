@@ -1,4 +1,23 @@
-  /* Nav bar */
+body{
+  margin: 0;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+/* body margin */
+.container{
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 200px;
+}
+/* End body margin */
+
+/* Title */
+.title{
+  text-align: center;
+}
+
+/* End title */
+
+/* Nav bar */
   .menu-order {
     float: left;
   }
