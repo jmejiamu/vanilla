@@ -9,5 +9,5 @@ $(document).ready(function () {
             $(this).next('.description').fadeOut();
             $(this).removeClass('close');
         }
-    ); // end toggle
-}); // end ready
+    );
+});
