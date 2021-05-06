@@ -1,12 +1,12 @@
 $(document).ready(function () {
-    $('.answer').hide();
+    $('.description').hide();
     $('.description-container h2').toggle(
         function () {
-            $(this).next('.answer').slideDown();
+            $(this).next('.description').slideDown();
             $(this).addClass('close');
         },
         function () {
-            $(this).next('.answer').fadeOut();
+            $(this).next('.description').fadeOut();
             $(this).removeClass('close');
         }
     ); // end toggle
