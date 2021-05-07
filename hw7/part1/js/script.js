@@ -10,11 +10,22 @@ const bckColor = () => {
 }
 
 const fontColor = () => {
+
     let redChoose = document.getElementById('option1').checked;
+    let greeChoose = document.getElementById('option2').checked;
+    let blueChoose = document.getElementById('option3').checked;
+
     if (redChoose) {
-        document.getElementById('p-one').className = "paraOne"
+        document.getElementById('p-one').className = "para-one"
     } else {
         document.getElementById('p-one').className = ""
+    }
+
+    if (greeChoose) {
+        document.getElementById('p-two').className = "para-two"
+    } else {
+        document.getElementById('p-two').className = ""
 
     }
+
 }

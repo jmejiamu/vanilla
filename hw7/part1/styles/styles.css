@@ -12,8 +12,17 @@ body{
 /* End background */
 
 /* Paragraph color */
-.paraOne{
+.para-one{
   color:red;
+  font-weight:bolder;
+}
+.para-two{
+  color:green;
+  font-weight: bolder;
+}
+.para-three{
+  color:blue;
+  font-weight: bolder;
 }
 /* End paragraph color */
 
