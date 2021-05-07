@@ -39,16 +39,14 @@
         <label for="option3"> Blue</label><br>
         <p>Title Options</p>
 
-        <input type="radio" id="large" name="gender" value="male">
+        <input type="radio" id="large" onchange="titleStyles()" name="op" value="large">
         <label for="large">Large</label><br>
 
-        <input type="radio" id="center" name="gender" value="female">
-        <label for="center">Center</label><br>
+        <input type="radio" id="reset" onchange="titleStyles()" name="op" value="reset">
+        <label for="reset">reset</label><br>
 
-        <input type="radio" id="italic" name="gender" value="other">
-        <label for="italic">Italic</label><br>
 
-        <h4>className Attributes</h4>
+        <h3 id="title">className Attributes</h3>
         <p id="p-one">
             Create a webpage in which users are allowed to select a page layout and formatting through the use of the
             className property. Choose at least three form elements such as: radio buttons, select items, checkboxes,

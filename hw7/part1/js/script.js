@@ -36,3 +36,14 @@ const fontColor = () => {
     }
 
 }
+
+const titleStyles = () => {
+    let largeChoose = document.getElementById('large').checked;
+    if (largeChoose) {
+        document.getElementById('title').className = "font-ti"
+    } else {
+        document.getElementById('title').className = ""
+
+    }
+
+}
