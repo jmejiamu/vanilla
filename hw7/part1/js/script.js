@@ -28,4 +28,11 @@ const fontColor = () => {
 
     }
 
+    if (blueChoose) {
+        document.getElementById('p-three').className = "para-three"
+    } else {
+        document.getElementById('p-three').className = ""
+
+    }
+
 }
