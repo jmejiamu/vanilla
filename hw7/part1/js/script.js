@@ -43,7 +43,6 @@ const titleStyles = () => {
         document.getElementById('title').className = "font-ti"
     } else {
         document.getElementById('title').className = ""
-
     }
 
 }
