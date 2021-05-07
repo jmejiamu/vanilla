@@ -14,7 +14,7 @@
   <script src='./js/script.js' async></script>
 </head>
 
-<body>
+<body id="style-bck">
   <ul class="nav-style">
     <li class="active-item menu-order"><a href="#home"><strong>CNIT 133</strong></a></li>
     <li class="menu-order"><a href="/index.html"><strong>Homework 1</strong></a></li>
@@ -22,32 +22,40 @@
   <header>
     <h1 class="title">Part 1</h1>
   </header>
+
   <div class="container">
+    <label for="bck">Change background: </label><br>
+    <select name="bck" id="back-color" onchange="bckColor()" required>
+      <option value="normal">Normal Mode</option>
+      <option value="dark">Dark Mode</option>
+
+    </select>
     <p>
       Create a webpage in which users are allowed to select a page layout and formatting through the use of the
       className property. Choose at least three form elements such as: radio buttons, select items, checkboxes, and
       buttons to allow the user to change some CSS property of the page - for example: a group of radio buttons for the
       user to select background color, a select item for the user to select font size or group of font family, a group
       of checkboxes where the user can select italic (font style), bold (font weight), etc.
-
+      <br />
+      <br />
       Attention! Remember that certain styles cannot be applied at the same time! For example, it is not possible to
       offer a group of checkboxes for the user to select different font-sizes as you will not be able to apply all the
       choices the user can make with a group of checkboxes (in a group of checkboxes the user can select more than one
       option, right?). So, for this type of style, you could use a group of radio buttons (in a group of radio buttons,
       the user can only select one option, right?)
 
-      You may use JavaScript or jQuery for this.
+    <h3>You may use JavaScript or jQuery for this.</h3>
 
-      You should not ignore any of the choices made by the user which means that once a choice is made, it should remain
-      active on the page or the area selected to apply the changes. The choice should be applied when the choice is
-      made! For example, if you give radio buttons for the background color, such as: cyan, light green, or orange and
-      the user chooses orange, the orange background should be applied immediately! Then, after that choice, if in
-      another option you give checkboxes for the user to choose font bold, and/or font italic and the user selects both
-      checkboxes, then the page should maintain the background color chosen from the radio button and apply the new
-      styles (bold font and italicized font) as well, etc.
+    You should not ignore any of the choices made by the user which means that once a choice is made, it should remain
+    active on the page or the area selected to apply the changes. The choice should be applied when the choice is
+    made! For example, if you give radio buttons for the background color, such as: cyan, light green, or orange and
+    the user chooses orange, the orange background should be applied immediately! Then, after that choice, if in
+    another option you give checkboxes for the user to choose font bold, and/or font italic and the user selects both
+    checkboxes, then the page should maintain the background color chosen from the radio button and apply the new
+    styles (bold font and italicized font) as well, etc.
 
-      In case of checkboxes, if the user uncheck the mark of a checkbox, the style that was unchecked should be removed
-      from the page or area selected!
+    In case of checkboxes, if the user uncheck the mark of a checkbox, the style that was unchecked should be removed
+    from the page or area selected!
     </p>
   </div>
 
