@@ -13,10 +13,8 @@ const checkForm = () => {
     let female = document.getElementById("female").checked;
     let other = document.getElementById("other").checked;
 
-    console.log(male);
 
     let dropDown = document.getElementById("years");
-    console.log(dropDown.selectedIndex);
 
     if ((optionOne || optionThree || optionTwo)
         && (male || female || other)

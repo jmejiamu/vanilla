@@ -3,12 +3,20 @@ body{
   margin: 0;
   font-family: 'Barlow Condensed', sans-serif;
 }
+
 /* Change background */
 .body-style{
   background-color: rgb(27, 24, 24);
   color: white ;
 }
 /* End background */
+
+/* Paragraph color */
+.paraOne{
+  color:red;
+}
+/* End paragraph color */
+
 /* body margin */
 .container{
   margin-left: 200px;
