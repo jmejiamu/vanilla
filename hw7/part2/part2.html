@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Homework 7</title>
+  <meta name='description'
+    content='List of all assignments done by Jose Mejia Munoz for JavaScript,jQuery, AJAX course'>
+  <link rel='stylesheet' type='text/css' media='screen' href='./styles/styles.css'>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="http://code.jquery.com/jquery-1.7.1.js"></script>
+  <script src='./js/script.js' async></script>
+</head>
+
+<body id="style-bck">
+  <ul class="nav-style">
+    <li class="active-item menu-order"><a href="#home"><strong>CNIT 133</strong></a></li>
+    <li class="menu-order"><a href="/index.html"><strong>Homework 1</strong></a></li>
+  </ul>
+  <header>
+    <h1 class="title">Part 2</h1>
+  </header>
+
+  <div class="container">
+    <label for="bck">Change background: </label><br>
+    <select name="bck" id="back-color" onchange="bckColor()" required>
+      <option value="normal">Normal Mode</option>
+      <option value="dark">Dark Mode</option>
+
+    </select>
+    <p>Change font color</p>
+    <input type="checkbox" id="option1" onchange="fontColor()" name="option1" value="fronend">
+    <label for="option1"> Red</label><br>
+    <input type="checkbox" id="option2" onchange="fontColor()" name="option" value="backend">
+    <label for="option2"> Green</label><br>
+    <input type="checkbox" id="option3" onchange="fontColor()" name="option" value="fullstack">
+    <label for="option3"> Blue</label><br>
+    <p>Title Options</p>
+
+    <input type="radio" id="large" onchange="titleStyles()" name="op" value="large">
+    <label for="large">Large</label><br>
+
+    <input type="radio" id="reset" onchange="titleStyles()" name="op" value="reset">
+    <label for="reset">Reset</label><br>
+
+
+    <h3 id="title">className Attributes</h3>
+    <p id="p-one">
+      Create a webpage in which users are allowed to select a page layout and formatting through the use of the
+      className property. Choose at least three form elements such as: radio buttons, select items, checkboxes,
+      and
+      buttons to allow the user to change some CSS property of the page - for example: a group of radio buttons
+      for the
+      user to select background color, a select item for the user to select font size or group of font family, a
+      group
+      of checkboxes where the user can select italic (font style), bold (font weight), etc.
+    </p>
+
+    <p id="p-two">
+      Attention! Remember that certain styles cannot be applied at the same time! For example, it is not possible
+      to
+      offer a group of checkboxes for the user to select different font-sizes as you will not be able to apply all
+      the
+      choices the user can make with a group of checkboxes (in a group of checkboxes the user can select more than
+      one
+      option, right?). So, for this type of style, you could use a group of radio buttons (in a group of radio
+      buttons,
+      the user can only select one option, right?)
+    </p>
+
+    <h3>You may use JavaScript or jQuery for this.</h3>
+    <p id="p-three">
+      You should not ignore any of the choices made by the user which means that once a choice is made, it should
+      remain
+      active on the page or the area selected to apply the changes. The choice should be applied when the choice
+      is
+      made! For example, if you give radio buttons for the background color, such as: cyan, light green, or orange
+      and
+      the user chooses orange, the orange background should be applied immediately! Then, after that choice, if in
+      another option you give checkboxes for the user to choose font bold, and/or font italic and the user selects
+      both
+      checkboxes, then the page should maintain the background color chosen from the radio button and apply the
+      new
+      styles (bold font and italicized font) as well, etc.
+
+      In case of checkboxes, if the user uncheck the mark of a checkbox, the style that was unchecked should be
+      removed
+      from the page or area selected!
+    </p>
+  </div>
+
+  <footer class="footer-style">
+    <p>Jose Mejia Munoz | City College of San Francisco</p>
+    <a href="https://github.com/jmejiamu"><i class="fa fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/jose-h-mejia-munoz/"><i class="fa fa-linkedin"></i></a>
+    <a href="https://jmejiamu.github.io/portafolio/"><i class="fa fa-internet-explorer"></i></a>
+  </footer>
+
+</body>
