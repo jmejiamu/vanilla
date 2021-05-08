@@ -36,7 +36,9 @@ ul.dropdown  {
 ul.dropdown li { 
   font-weight: bold;
    float: left; 
-   background: #ccc; 
+   background: rgb(206, 203, 49); 
+   padding: 10px;
+   text-align: center;
   }
 ul.dropdown a:hover	{ 
   color: #000; 
