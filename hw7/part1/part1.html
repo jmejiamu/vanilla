@@ -18,32 +18,49 @@
     <ul class="nav-style">
         <li class="active-item menu-order"><a href="#home"><strong>CNIT 133</strong></a></li>
         <li class="menu-order"><a href="/index.html"><strong>Homework 1</strong></a></li>
+        <li class="menu-order"><a href="/hw7/part2/part2.html"><strong>Part2</strong></a></li>
     </ul>
     <header>
         <h1 class="title">Part 1</h1>
     </header>
 
     <div class="container">
-        <label for="bck">Change background: </label><br>
-        <select name="bck" id="back-color" onchange="bckColor()" required>
-            <option value="normal">Normal Mode</option>
-            <option value="dark">Dark Mode</option>
+        <label for="bck">Change background:
+            <br>
+            <select name="bck" id="back-color" onchange="bckColor()" required>
+                <option value="normal">Normal Mode</option>
+                <option value="dark">Dark Mode</option>
 
-        </select>
+            </select>
+        </label>
+
         <p>Change font color</p>
-        <input type="checkbox" id="option1" onchange="fontColor()" name="option1" value="fronend">
-        <label for="option1"> Red</label><br>
-        <input type="checkbox" id="option2" onchange="fontColor()" name="option" value="backend">
-        <label for="option2"> Green</label><br>
-        <input type="checkbox" id="option3" onchange="fontColor()" name="option" value="fullstack">
-        <label for="option3"> Blue</label><br>
+        <label for="option1">
+            <input type="checkbox" id="option1" onchange="fontColor()" name="option1" value="red" /> Red
+
+        </label>
+        <br>
+
+        <label for="option2">
+            <input type="checkbox" id="option2" onchange="fontColor()" name="option" value="green" />Green
+        </label>
+        <br>
+
+        <label for="option3">
+
+            <input type="checkbox" id="option3" onchange="fontColor()" name="option" value="blue" />Blue
+        </label>
+        <br>
+
         <p>Title Options</p>
 
-        <input type="radio" id="large" onchange="titleStyles()" name="op" value="large">
-        <label for="large">Large</label><br>
+        <label for="large">
+            <input type="radio" id="large" onchange="titleStyles()" name="op" value="large">Large
+        </label><br>
 
-        <input type="radio" id="reset" onchange="titleStyles()" name="op" value="reset">
-        <label for="reset">Reset</label><br>
+        <label for="reset">
+            <input type="radio" id="reset" onchange="titleStyles()" name="op" value="reset">Reset
+        </label><br>
 
 
         <h3 id="title">className Attributes</h3>
