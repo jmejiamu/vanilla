@@ -4,6 +4,12 @@ body{
   font-family: 'Barlow Condensed', sans-serif;
 } 
 
+/* Title */
+.title{
+  text-align: center;
+}
+/* End title */
+
 #page-wrap{ 
   width: 800px; 
   margin: 25px auto; 
@@ -36,7 +42,7 @@ ul.dropdown a:hover	{
   color: #000; 
 }
 ul.dropdown a:active { 
-  color: #ffa500; 
+  color: #1dfa09; 
 }
 ul.dropdown li a { 
   display: block; 
@@ -49,7 +55,7 @@ ul.dropdown li:last-child a {
 } 
 
 ul.dropdown li.hover, ul.dropdown li:hover { 
-  background: #F3D673; 
+  background: #8beb66; 
   color: black; 
   position: relative; }
 ul.dropdown li.hover a { color: black; }
@@ -86,6 +92,16 @@ ul.dropdown ul ul{
 ul.dropdown li:hover > ul{ 
   visibility: visible; 
 }
+
+/* body margin */
+.container {
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 200px;
+}
+/* End body margin */
+
+
 
   /* Footer */
 .footer-style{
