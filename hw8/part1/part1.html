@@ -32,22 +32,31 @@
         </form>
         <p>Suggestions: <span id="txtHint"></span></p>
 
-        <p> I would like to use is "The Lord of Rings API". It requires authorization for most the routes. The public
-            key can be found once the user sign up for an account. Also, all the responses are in JSON format. </p>
+        <p> I would like to use "The Lord of Rings API". It requires authorization for most the routes. The public
+            key can be found once the user sign up for an account. Moreover, all the responses are in JSON format. </p>
         <table style="width:100%">
-            <caption>The Lord of Rings API</caption>
-            <tr>
-                <th>Month</th>
-                <th>Savings</th>
-            </tr>
-            <tr>
-                <td>January</td>
-                <td>$100</td>
-            </tr>
-            <tr>
-                <td>February</td>
-                <td>$50</td>
-            </tr>
+            <caption>The Lord of Rings API routes available</caption>
+            <thead>
+
+                <tr>
+                    <th>Endpoint</th>
+                    <th>Response</th>
+                    <th>Token required</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>/book</td>
+                    <td>List of all books</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>/books/{id}</td>
+                    <td>Request one specific book</td>
+                    <td>No</td>
+                </tr>
+
+            </tbody>
         </table>
     </div>
 
